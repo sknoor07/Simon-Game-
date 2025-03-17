@@ -16,8 +16,8 @@ function startSequence(){
         userSequence=[];
         level++;
         $("#level-title").text("Level "+level);
-        var ranNum= Math.floor(Math.random()*3)+1;
-        var colour= bcolor[ranNum];
+        var ranNum= Math.floor(Math.random()*4)+1;
+        var colour= bcolor[ranNum-1];
         gameSequqnce.push(colour);
         $("#"+colour).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
         playSound(colour);
